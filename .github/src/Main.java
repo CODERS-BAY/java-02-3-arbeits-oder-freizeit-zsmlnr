@@ -7,10 +7,10 @@ public class Main {
      double time=user.nextDouble();
 
      boolean freeTime=false;
-     if(time < 8.00 & time > 12.00 & time < 13.00 & time > 16.00){
+     if(time < 8.00 || time > 12.00 && time < 13.00 || time > 16.00){
+         freeTime=true;
          System.out.println("Freetime.: "+freeTime);
      } else {
-         freeTime=true;
          System.out.println("Freetime.: "+freeTime);
      }
 
